@@ -1,0 +1,45 @@
+[28-Feb-2019 10:01:34 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hapn7578_root'@'iix47.satu.rumahweb.com' (using password: YES) in /home/hapn7578/public_html/server/prs.php on line 7
+[28-Feb-2019 10:01:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/hapn7578/public_html/server/prs.php on line 177
+[28-Feb-2019 10:06:01 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hapn7578_root'@'iix47.satu.rumahweb.com' (using password: YES) in /home/hapn7578/public_html/server/prs.php on line 7
+[28-Feb-2019 10:08:33 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hapn7578_root'@'iix47.satu.rumahweb.com' (using password: YES) in /home/hapn7578/public_html/server/prs.php on line 7
+[28-Feb-2019 10:08:33 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/hapn7578/public_html/server/prs.php on line 34
+[28-Feb-2019 10:08:33 UTC] PHP Warning:  main(): Couldn't fetch mysqli in /home/hapn7578/public_html/server/prs.php on line 42
+[28-Feb-2019 10:09:36 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hapn7578_root'@'iix47.satu.rumahweb.com' (using password: YES) in /home/hapn7578/public_html/server/prs.php on line 7
+[28-Feb-2019 10:09:36 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/hapn7578/public_html/server/prs.php on line 34
+[28-Feb-2019 10:09:36 UTC] PHP Warning:  main(): Couldn't fetch mysqli in /home/hapn7578/public_html/server/prs.php on line 42
+[28-Feb-2019 10:09:44 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hapn7578_root'@'iix47.satu.rumahweb.com' (using password: YES) in /home/hapn7578/public_html/server/prs.php on line 7
+[28-Feb-2019 10:09:44 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/hapn7578/public_html/server/prs.php on line 34
+[28-Feb-2019 10:09:44 UTC] PHP Warning:  main(): Couldn't fetch mysqli in /home/hapn7578/public_html/server/prs.php on line 42
+[28-Feb-2019 10:13:00 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hapn7578_root'@'iix47.satu.rumahweb.com' (using password: YES) in /home/hapn7578/public_html/server/prs.php on line 7
+[25-May-2019 18:36:55 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 14
+[25-May-2019 18:38:57 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 15
+[25-May-2019 19:09:35 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 15
+[25-May-2019 19:09:56 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 15
+[25-May-2019 19:10:05 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 15
+[25-May-2019 19:11:00 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 15
+[25-May-2019 19:11:29 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 15
+[01-Jun-2019 10:58:25 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 14
+[01-Jun-2019 11:07:30 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 14
+[01-Jun-2019 11:13:18 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 14
+[01-Jun-2019 11:17:44 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 14
+[01-Jun-2019 11:23:59 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 14
+[02-Jun-2019 21:55:34 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$username in /home/hapn7578/public_html/server/prs.php on line 324
+[02-Jun-2019 21:56:27 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$username in /home/hapn7578/public_html/server/prs.php on line 324
+[02-Jun-2019 21:56:48 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$username in /home/hapn7578/public_html/server/prs.php on line 324
+[02-Jun-2019 22:14:48 Asia/Jakarta] PHP Notice:  Trying to get property of non-object in /home/hapn7578/public_html/server/prs.php on line 341
+[02-Jun-2019 22:18:40 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$username_member in /home/hapn7578/public_html/server/prs.php on line 352
+[02-Jun-2019 22:18:40 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$username_staff in /home/hapn7578/public_html/server/prs.php on line 353
+[02-Jun-2019 22:18:40 Asia/Jakarta] PHP Notice:  Undefined variable: point in /home/hapn7578/public_html/server/prs.php on line 366
+[02-Jun-2019 22:23:57 Asia/Jakarta] PHP Notice:  Undefined variable: point in /home/hapn7578/public_html/server/prs.php on line 366
+[15-Jun-2019 00:35:26 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$point in /home/hapn7578/public_html/server/prs.php on line 325
+[15-Jun-2019 16:43:09 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$point in /home/hapn7578/public_html/server/prs.php on line 325
+[15-Jun-2019 16:43:11 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$point in /home/hapn7578/public_html/server/prs.php on line 325
+[10-Jul-2019 19:29:10 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$point in /home/hapn7578/public_html/server/prs.php on line 325
+[10-Jul-2019 19:29:12 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$point in /home/hapn7578/public_html/server/prs.php on line 325
+[10-Jul-2019 19:40:07 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$point in /home/hapn7578/public_html/server/prs.php on line 325
+[10-Jul-2019 19:40:12 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$point in /home/hapn7578/public_html/server/prs.php on line 325
+[12-Jul-2019 23:39:24 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$username in /home/hapn7578/public_html/server/prs.php on line 16
+[12-Jul-2019 23:39:24 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$password in /home/hapn7578/public_html/server/prs.php on line 17
+[06-Aug-2019 09:41:37 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$username in /home/hapn7578/public_html/server/prs.php on line 16
+[06-Aug-2019 09:41:37 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$password in /home/hapn7578/public_html/server/prs.php on line 17
+[13-Aug-2019 00:26:28 Asia/Jakarta] PHP Notice:  Undefined property: stdClass::$point in /home/hapn7578/public_html/server/prs.php on line 325
