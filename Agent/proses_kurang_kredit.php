@@ -18,9 +18,9 @@ $row_cek2 = mysqli_fetch_array($query_cek2);
         $row_cek['used_credit']=0;
     }
     
-    $used_credit = $row_cek['used_credit'] + $credit;
-    $credit_agent = $row_cek['credit'] - $credit;
-    $credit_member = $row_cek2['credit'] + $credit;
+    $used_credit = $row_cek['used_credit'] - $credit;
+    $credit_agent = $row_cek['credit'] + $credit;
+    $credit_member = $row_cek2['credit'] - $credit;
     $sql_member = "UPDATE tb_user SET
                 credit = '$credit_member' WHERE username='$username'";
 
@@ -35,4 +35,4 @@ $row_cek2 = mysqli_fetch_array($query_cek2);
     } else {
     // kalau gagal tampilkan pesan
     die("Gagal menyimpan perubahan...");
-	}
+}

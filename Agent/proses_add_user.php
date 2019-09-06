@@ -35,22 +35,6 @@ if(isset($_POST['submit'])){
 	$hadiah_mkts = $_POST['hadiah_mkts'];
 	$created_by = $_SESSION['username'];
 
-	$sql = "INSERT INTO tb_user(
-		username, password, first_name, last_name, phone, mobile, credit,
-		max_bet_2d, max_bet_3d, max_bet_4d, max_bet_other, market, diskon_2d,
-		hadiah_2d, diskon_3d, hadiah_3d, diskon_4d, hadiah_4d, diskon_shio,
-		hadiah_shio, pajak_bkgg, hadiah_bkgg, diskon_cb, hadiah_cb, diskon_mk,
-		hadiah_mk, diskon_cj, hadiah_cj, diskon_mkts, hadiah_mkts, created_by,
-		status, hak_akses, is_logged)
-		VALUES('$username', '$password', '$first_name', '$last_name', '$phone',
-			'$mobile', '$credit', '$max_bet_2d', '$max_bet_3d', '$max_bet_4d',
-			'$max_bet_other', '$market', '$diskon_2d', '$hadiah_2d', '$diskon_3d',
-			'$hadiah_3d', '$diskon_4d', '$hadiah_4d', '$diskon_shio', '$hadiah_shio',
-			'$pajak_bkgg', '$hadiah_bkgg', '$diskon_cb', '$hadiah_cb', '$diskon_mk',
-			'$hadiah_mk', '$diskon_cj', '$hadiah_cj', '$diskon_mkts', '$hadiah_mkts',
-			'$created_by', 'Available', 'Member', 'False')";
-	$query = mysqli_query($conn, $sql);
-
 	$sql_cek = "SELECT * FROM tb_user WHERE username = '$_SESSION[username]'";
 	$query_cek = mysqli_query($conn, $sql_cek);
 	$row_cek = mysqli_fetch_array($query_cek);
@@ -58,141 +42,180 @@ if(isset($_POST['submit'])){
 		echo "
 			<script>
 				alert('Credit tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['max_bet_2d'] < $max_bet_2d){
 		echo "
 			<script>
 				alert('Max bet 2d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['max_bet_3d'] < $max_bet_3d){
 		echo "
 			<script>
 				alert('Max bet 3d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['max_bet_4d'] < $max_bet_4d){
 		echo "
 			<script>
 				alert('Max bet 4d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['max_bet_other'] < $max_bet_other){
 		echo "
 			<script>
 				alert('Max bet other tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['diskon_2d'] < $diskon_2d){
 		echo "
 			<script>
 				alert('Diskon 2d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_2d'] < $hadiah_2d){
 		echo "
 			<script>
 				alert('Hadiah 2d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['diskon_3d'] < $diskon_3d){
 		echo "
 			<script>
 				alert('Diskon 3d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_3d'] < $hadiah_3d){
 		echo "
 			<script>
 				alert('Hadiah 3d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['diskon_4d'] < $diskon_4d){
 		echo "
 			<script>
 				alert('Diskon 4d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_4d'] < $hadiah_4d){
 		echo "
 			<script>
 				alert('Hadiah 4d tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['diskon_shio'] < $diskon_shio){
 		echo "
 			<script>
 				alert('Diskon shio tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_shio'] < $hadiah_shio){
 		echo "
 			<script>
 				alert('Hadiah shio tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['pajak_bkgg'] < $pajak_bkgg){
 		echo "
 			<script>
 				alert('Pajak bkgg tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_bkgg'] < $hadiah_bkgg){
 		echo "
 			<script>
 				alert('Hadiah bkgg tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['diskon_cb'] < $diskon_cb){
 		echo "
 			<script>
 				alert('Diskon cb tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_cb'] < $hadiah_cb){
 		echo "
 			<script>
 				alert('Hadiah cb tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['diskon_mk'] < $diskon_mk){
 		echo "
 			<script>
 				alert('Diskon mk tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_mk'] < $hadiah_mk){
 		echo "
 			<script>
 				alert('Hadiah mk tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['diskon_cj'] < $diskon_cj){
 		echo "
 			<script>
 				alert('Diskon cj tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_cj'] < $hadiah_cj){
 		echo "
 			<script>
 				alert('Hadiah cj tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['diskon_mkts'] < $diskon_mkts){
 		echo "
 			<script>
 				alert('Diskon mkts tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else if($row_cek['hadiah_mkts'] < $hadiah_mkts){
 		echo "
 			<script>
 				alert('Hadiah mkts tidak cukup');
+				document.location.href = 'index.php?page=add_user';
 			</script>
 		";
 	}else{
+		$sql = "INSERT INTO tb_user(
+			username, password, first_name, last_name, phone, mobile, credit,
+			max_bet_2d, max_bet_3d, max_bet_4d, max_bet_other, market, diskon_2d,
+			hadiah_2d, diskon_3d, hadiah_3d, diskon_4d, hadiah_4d, diskon_shio,
+			hadiah_shio, pajak_bkgg, hadiah_bkgg, diskon_cb, hadiah_cb, diskon_mk,
+			hadiah_mk, diskon_cj, hadiah_cj, diskon_mkts, hadiah_mkts, created_by,
+			status, hak_akses, is_logged)
+			VALUES('$username', '$password', '$first_name', '$last_name', '$phone',
+				'$mobile', '$credit', '$max_bet_2d', '$max_bet_3d', '$max_bet_4d',
+				'$max_bet_other', '$market', '$diskon_2d', '$hadiah_2d', '$diskon_3d',
+				'$hadiah_3d', '$diskon_4d', '$hadiah_4d', '$diskon_shio', '$hadiah_shio',
+				'$pajak_bkgg', '$hadiah_bkgg', '$diskon_cb', '$hadiah_cb', '$diskon_mk',
+				'$hadiah_mk', '$diskon_cj', '$hadiah_cj', '$diskon_mkts', '$hadiah_mkts',
+				'$created_by', 'Available', 'Member', 'False')";
+		$query = mysqli_query($conn, $sql);
+		
 		if($query){
 			if(is_null($row_cek['used_credit'])){
 				$row_cek['used_credit']=0;
@@ -212,13 +235,14 @@ if(isset($_POST['submit'])){
 			echo "
 				<script>
 					alert('Berhasil mendaftar Member');
-					document.location.href = 'list_user.php';
+					document.location.href = 'index.php?page=list_user';
 				</script>
 			";
 		}else{
 			echo "
 				<script>
 					alert('Gagal mendaftar Member');
+					document.location.href = 'index.php?page=add_user';
 				</script>
 			";
 		}

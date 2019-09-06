@@ -95,21 +95,6 @@ include '../koneksi.php'; ?>
 								<div class="span10">
 									<label>Credit</label>
 									<input type="number" name="credit" class="span12" id="credit" onkeypress="return isNumberKey(event)" required>
-									<span class="f_req"> Max Credit = <?php echo $row['credit']; ?></span>
-								</div>
-							</div>
-						</div>
-						<div class="formSep">
-							<div class="row-fluid">
-								<div class="span5">
-									<label>Max Bet :</label>
-									<input type="number" name="max_bet" class="span12" id="max_bet" onkeypress="return isNumberKey(event)" required>
-									<span class="f_req"> Max Bet = <?php echo $row['max_bet']; ?></span>
-								</div>
-								<div class="span5">
-									<label>Min Bet :</label>
-									<input type="number" name="min_bet" class="span12" id="min_bet" onkeypress="return isNumberKey(event)" required>
-									<span class="f_req">Min Bet = <?php echo $row['min_bet']; ?></span>
 								</div>
 							</div>
 						</div>
@@ -118,12 +103,10 @@ include '../koneksi.php'; ?>
 								<div class="span5">
 									<label>Max Bet 2d :</label>
 									<input type="number" name="max_bet_2d" class="span12" id="max_bet_2d" onkeypress="return isNumberKey(event)" required>
-									<span class="f_req">Max Bet 2d = <?php echo $row['max_bet_2d']; ?></span>
 								</div>
 								<div class="span5">
 									<label>Max Bet 3d :</label>
 									<input type="number" name="max_bet_3d" class="span12" id="max_bet_3d" onkeypress="return isNumberKey(event)" required>
-									<span class="f_req">Max Bet 3d = <?php echo $row['max_bet_3d']; ?></span>
 								</div>
 
 							</div>
@@ -133,12 +116,10 @@ include '../koneksi.php'; ?>
 								<div class="span5">
 									<label>Max Bet 4d :</label>
 									<input type="number" name="max_bet_4d" class="span12" id="max_bet_4d" onkeypress="return isNumberKey(event)" required>
-									<span class="f_req">Max Bet 4d = <?php echo $row['max_bet_4d']; ?></span>
 								</div>
 								<div class="span5">
 									<label>Max Bet Other :</label>
 									<input type="number" name="max_bet_other" class="span12" id="max_bet_other" onkeypress="return isNumberKey(event)" required>
-									<span class="f_req">Max Bet Other = <?php echo $row['max_bet_other']; ?></span>
 								</div>
 							</div>
 						</div>
@@ -250,13 +231,13 @@ include '../koneksi.php'; ?>
 									</tr>
 									<tr>
 										<td>
-											<label for="cm">CM</label>
+											<label for="mk">MK</label>
 										</td>
 										<td>
-											<input type="number" name="diskon_cm" id="diskon_cm" onkeypress="return isNumberKey(event)" placeholder="Diskon CM" required> X
+											<input type="number" name="diskon_mk" id="diskon_mk" onkeypress="return isNumberKey(event)" placeholder="Diskon MK" required> X
 										</td>
 										<td>
-											<input type="number" name="hadiah_cm" id="hadiah_cm" onkeypress="return isNumberKey(event)" placeholder="Hadiah CM" required>
+											<input type="number" name="hadiah_mk" id="hadiah_mk" onkeypress="return isNumberKey(event)" placeholder="Hadiah MK" required>
 										</td>
 									</tr>
 									<tr>
@@ -272,24 +253,13 @@ include '../koneksi.php'; ?>
 									</tr>
 									<tr>
 										<td>
-											<label for="cn">CN</label>
+											<label for="mkts">MKTS</label>
 										</td>
 										<td>
-											<input type="number" name="diskon_cn" id="diskon_cn" onkeypress="return isNumberKey(event)" placeholder="Diskon CN" required> X
+											<input type="number" name="diskon_cn" id="diskon_mkts" onkeypress="return isNumberKey(event)" placeholder="Diskon MKTS" required> X
 										</td>
 										<td>
-											<input type="number" name="hadiah_cn" id="hadiah_cn" onkeypress="return isNumberKey(event)" placeholder="Hadiah CN" required>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="gp">GP</label>
-										</td>
-										<td>
-											<input type="number" name="diskon_gp" id="diskon_gp" onkeypress="return isNumberKey(event)" placeholder="Diskon GP" required> X
-										</td>
-										<td>
-											<input type="number" name="hadiah_gp" id="hadiah_gp" onkeypress="return isNumberKey(event)" placeholder="Hadiah GP" required>
+											<input type="number" name="hadiah_cn" id="hadiah_mkts" onkeypress="return isNumberKey(event)" placeholder="Hadiah MKTS" required>
 										</td>
 									</tr>
 								</table>

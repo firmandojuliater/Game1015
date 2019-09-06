@@ -14,6 +14,14 @@ $sql_cek2 = "SELECT * FROM tb_user WHERE username = '$username'";
 $query_cek2 = mysqli_query($conn, $sql_cek2);
 $row_cek2 = mysqli_fetch_array($query_cek2);
 
+if($row_cek['credit'] < $credit){
+    echo "
+        <script>
+            alert('Credit tidak cukup');
+            document.location.href = 'index.php?page=credit';
+        </script>
+    ";
+}else{
     if(is_null($row_cek['used_credit'])){
         $row_cek['used_credit']=0;
     }
@@ -35,4 +43,5 @@ $row_cek2 = mysqli_fetch_array($query_cek2);
     } else {
     // kalau gagal tampilkan pesan
     die("Gagal menyimpan perubahan...");
-	}
+}
+}

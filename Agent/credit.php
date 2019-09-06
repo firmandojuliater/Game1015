@@ -61,11 +61,12 @@ include '../koneksi.php'; ?>
                       		echo "<td>".$row['member']."</td>";
                       		echo "
                           <td>
-                          <a href='tambah_credit.php?username=".$row['username']."' class='btn btn-success btn-sm' ><span class='glyphicon glyphicon-edit'></span> Tambah</a>
-                          <a href='kurang_credit.php?username=".$row['username']."' class='btn btn-danger btn-sm' ><span class='glyphicon glyphicon-trash'></span> Kurang</a>
+                          <a href='#tambah_".$row['username']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Tambah</a>
+                          <a href='#kurang_".$row['username']."' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Kurang</a>
                           </td>";
                       		echo "</tr>";
-                      		$a++;
+                              $a++;
+                              include('tambah_kurang_credit.php');
                       	}
                       	?>
 
